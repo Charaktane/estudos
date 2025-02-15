@@ -1,0 +1,8 @@
+a, b: inteiro
+
+Inicio
+escreval("Diga um valor para A: ")
+leia(a)
+escreval("Diga um valor para B: ")
+leia(b)
+escreval(" o valor de A agora é", b, " e o valor de B é", a, " muahaha!")
