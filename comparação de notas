@@ -1,0 +1,40 @@
+nota1, nota2: real
+
+Inicio
+escreval("diga sua nota de português do 1o bimestre: ")
+leia(nota1)
+escreval("diga sua nota de português do 2o bimestre:  ")
+leia(nota2)
+escreval("Vamos comparar ambas das notas!")
+escreval("o valor de ", nota1, " é igual a " , nota2, "?")
+se nota1 = nota2 entao
+escreval( "sim!")
+senao
+escreval("não!")
+FIMSE
+escreval(" o valor do 1o bimestre é menor do que o 2o?")
+se nota1 < nota2 entao
+escreval("sim!")
+senao
+escreval("não!")
+fimse
+escreval(" o valor do 1o bimestre é maior do que o 2o?")
+se nota1>nota2 entao
+escreval("sim!")
+senao escreval("não!")
+fimse
+escreval(" o valor do 1o bimestre é menor ou igual ao 2o?")
+se nota1 <= nota2 entao
+escreval("sim!")
+senao escreval ("não!")
+fimse
+escreval(" o valor do 1o bimestre é maior ou igual ao 2o?")
+se nota1 >= nota2 entao
+escreval("sim!")
+senao escreval("não!")
+escreval(" a nota do 1o é diferente do 2o?")
+se nota1 != nota2 ou nota2 != nota1 entao
+escreval("sim!")
+senao escreval("não")
+fimse
+fimse
