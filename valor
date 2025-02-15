@@ -1,0 +1,17 @@
+valor1: real
+valor2: real
+
+Inicio
+valor2 <- 15000
+escreval("qual valor acha que é o novo iphone?")
+leia(valor1)
+se valor1 < valor2 entao
+escreval("eita que barato! Normalmente é ", valor2)
+fimse
+se valor1= valor2 entao
+escreval("acertou!")
+se valor1>valor2 entao
+escreval("urra preço do djabo")
+
+fimse
+fimse
