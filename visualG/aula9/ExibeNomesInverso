@@ -1,0 +1,13 @@
+var
+    nomes: vetor[1..5] de caractere
+    i: inteiro
+inicio
+    para i <- 1 até 5 faca
+        escreval("Digite o ", i, "º nome: ")
+        leia(nomes[i])
+    fimpara
+    escreval("Nomes em ordem inversa: ")
+    para i <- 5 até 1 passo -1 faca
+        escreval(nomes[i], " ")
+    fimpara
+fimalgoritmo
