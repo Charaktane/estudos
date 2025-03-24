@@ -1,0 +1,20 @@
+var
+    capital: caractere
+inicio
+    // Entrada de dados
+    escreva("Digite o nome de uma capital brasileira: ")
+    leia(capital)
+    
+    // Verificação da região
+    se (capital = "São Paulo") ou (capital = "Rio de Janeiro") ou (capital = "Belo Horizonte") ou (capital = "Vitória") entao
+        escreva("A capital ", capital, " pertence à região Sudeste.")
+    senao
+        se (capital = "São Luís") ou (capital = "Teresina") ou (capital = "Fortaleza") ou 
+           (capital = "Natal") ou (capital = "João Pessoa") ou (capital = "Recife") ou 
+           (capital = "Maceió") ou (capital = "Aracaju") ou (capital = "Salvador") entao
+            escreva("A capital ", capital, " pertence à região Nordeste.")
+        senao
+            escreva("Não é nem do Nordeste nem do Sudeste.")
+        fimse
+    fimse
+fimalgoritmo
