@@ -1,0 +1,19 @@
+var
+    massaInicial, massaAtual: real
+    tempoSegundos, horas, minutos, segundos: inteiro
+inicio
+    escreval("Digite a massa inicial em gramas: ")
+    leia(massaInicial)
+    massaAtual <- massaInicial
+    tempoSegundos <- 0
+    enquanto massaAtual >= 0.5 faca
+        massaAtual <- massaAtual / 2
+        tempoSegundos <- tempoSegundos + 50
+    fimenquanto
+        horas <- tempoSegundos div 3600
+    minutos <- (tempoSegundos mod 3600) div 60
+    segundos <- tempoSegundos mod 60
+        escreval("Massa inicial: ", massaInicial:0:2, " gramas")
+    escreval("Massa final: ", massaAtual:0:2, " gramas")
+    escreval("Tempo necessário: ", horas, " horas, ", minutos, " minutos e ", segundos, " segundos.")
+fimalgoritmo
