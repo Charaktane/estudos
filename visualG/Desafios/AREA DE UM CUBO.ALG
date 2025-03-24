@@ -13,8 +13,8 @@ leia(valor)
 A <- 6 * valor ^ 2
 V <- valor^3
 
-escreval(" resultado da área é  ", A)
-escreval(" resultado do volume é ", V)
+escreval(" resultado da Ã¡rea Ã©  ", A)
+escreval(" resultado do volume Ã© ", V)
 
 
 Fimalgoritmo
