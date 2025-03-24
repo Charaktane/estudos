@@ -1,0 +1,13 @@
+var
+    metros, milimetros: real
+inicio
+    // Entrada de dados
+    escreva("Digite a medida em metros: ")
+    leia(metros)
+    
+    // Conversão para milímetros (1 metro = 1000 milímetros)
+    milimetros <- metros * 1000
+    
+    // Exibição do resultado
+    escreva("A medida em milímetros é: ", milimetros:2:0, " mm")
+fimalgoritmo
