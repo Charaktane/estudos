@@ -1,0 +1,9 @@
+var
+    num: inteiro
+inicio
+    num <- 10
+    repita
+        escreval(num)
+        num <- num - 1
+    ate (num < 1)
+fimalgoritmo
