@@ -1,0 +1,42 @@
+var
+    codigoCurso: inteiro
+    vagas, masc, fem, totalCandidatos, maiorCandidatosPorVaga: inteiro
+    candidatosPorVaga: real
+    percentualFeminino: real
+    maiorCodigoCurso: inteiro
+inicio
+    totalCandidatos <- 0
+    maiorCandidatosPorVaga <- 0
+    
+    repita
+        escreval("Digite o código do curso (0 para finalizar): ")
+        leia(codigoCurso)
+        
+        se codigoCurso <> 0 então
+            escreval("Digite o número de vagas: ")
+            leia(vagas)
+            escreval("Digite o número de candidatos do sexo masculino: ")
+            leia(masc)
+            escreval("Digite o número de candidatos do sexo feminino: ")
+            leia(fem)
+            
+            // Calculando o número de candidatos por vaga
+            candidatosPorVaga <- (masc + fem) / vagas
+            percentualFeminino <- (fem / (masc + fem)) * 100
+            escreval("Curso ", codigoCurso, ":")
+            escreval("Número de candidatos por vaga: ", candidatosPorVaga:0:2)
+            escreval("Percentual de candidatos do sexo feminino: ", percentualFeminino:0:2, "%")
+            totalCandidatos <- totalCandidatos + masc + fem
+            
+            se candidatosPorVaga > maiorCandidatosPorVaga então
+                maiorCandidatosPorVaga <- candidatosPorVaga
+                maiorCodigoCurso <- codigoCurso
+            fimse
+        fimse
+    até codigoCurso = 0
+    
+    escreval("O curso com o maior número de candidatos por vaga é o curso ", maiorCodigoCurso)
+    escreval("Com ", maiorCandidatosPorVaga:0:2, " candidatos por vaga.")
+    
+    escreval("Total de candidatos: ", totalCandidatos)
+fimalgoritmo
