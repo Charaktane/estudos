@@ -1,13 +1,10 @@
 var
     numero: inteiro
 inicio
-    // Repetir até que o usuário digite um número negativo
     repita
         escreval("Digite um número positivo (ou um número negativo para encerrar): ")
         leia(numero)
-        
-        // Verificando se o número é positivo
-        se numero >= 0 então
+                se numero >= 0 então
             escreval("Você digitou o número: ", numero)
         senao
             escreval("Programa encerrado. Você digitou um número negativo.")
