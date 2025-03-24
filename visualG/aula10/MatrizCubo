@@ -1,0 +1,21 @@
+var
+    matrizOriginal: vetor[1..5, 1..5] de inteiro
+    matrizCubo: vetor[1..5, 1..5] de inteiro
+    i, j: inteiro
+    elementoMeio: inteiro
+inicio
+    para i <- 1 até 5 faca
+        para j <- 1 até 5 faca
+            escreval("Digite o valor da posição [", i, ",", j, "] da matriz original: ")
+            leia(matrizOriginal[i, j])
+        fimpara
+    fimpara
+
+    para i <- 1 até 5 faca
+        para j <- 1 até 5 faca
+            matrizCubo[i, j] <- matrizOriginal[i, j] * matrizOriginal[i, j] * matrizOriginal[i, j]
+        fimpara
+    fimpara
+    elementoMeio <- matrizCubo[3, 3]
+    escreval("O elemento do meio da matriz cubo é: ", elementoMeio)
+fimalgoritmo
