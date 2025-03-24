@@ -1,0 +1,17 @@
+var
+    valor1, valor2: real
+inicio
+    repita
+        escreval("Digite o primeiro valor (intervalo de 1 a 100): ")
+        leia(valor1)
+        
+        escreval("Digite o segundo valor (intervalo de 1 a 100): ")
+        leia(valor2)
+        
+        se (valor1 < 1) ou (valor1 > 100) ou (valor2 < 1) ou (valor2 > 100) então
+            escreval("Valores fora do intervalo. Tente novamente.")
+        fimse
+    ate (valor1 >= 1) e (valor1 <= 100) e (valor2 >= 1) e (valor2 <= 100)
+    
+    escreval("A soma dos dois valores é: ", valor1 + valor2)
+fimalgoritmo
