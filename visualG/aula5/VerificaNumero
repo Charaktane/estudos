@@ -1,0 +1,12 @@
+var
+    numero: inteiro
+inicio
+    // Entrada de dados
+    escreva("Digite um número: ")
+    leia(numero)
+    
+    // Verificação das condições
+    se (numero > 80) ou (numero < 25) ou (numero = 40) entao
+        escreva("O número atende a uma das condições especificadas.")
+    fimse
+fimalgoritmo
