@@ -1,7 +1,7 @@
 Algoritmo "Idades"
 //Desenvolva um algoritmo que receba o nome e o ano de nascimento de uma
 // pessoa e calcule a idade que a pessoa fez no ano passado e a idade que
-//ter· daqui 10 anos.
+//ter√° daqui 10 anos.
 
 // prox tarefa AREA DE UM CUBO!
 Var
@@ -15,10 +15,10 @@ escreval("DIGITE SEU NOME!")
 leia(nome)
 escreval("ANO DE NASCIMENTO")
 leia(anoNascimento)
-escreval(" ESSE ANO … 2025.. ENT√O")
+escreval(" ESSE ANO √â 2025.. ENT√ÉO")
 idadePassada <- 2025 - anoNascimento
 idadeFuturo <- 2025 - anoNascimento  + 1
-escreval(" VOCE TER¡ EM 2026, ", idadeFuturo)
+escreval(" VOCE TER√Å EM 2026, ", idadeFuturo)
 escreval(" VOCE TEVE EM 2024, ", idadePassada)
 
 
