@@ -1,0 +1,15 @@
+var
+    numero, soma, i: inteiro
+inicio
+    soma <- 0
+    i <- 1
+        enquanto i <= 10 faca
+        escreval("Digite o ", i, "º número inteiro: ")
+        leia(numero)
+        
+        soma <- soma + numero
+        i <- i + 1
+    fimenquanto
+    
+    escreval("A soma de todos os números lidos é: ", soma)
+fimalgoritmo
