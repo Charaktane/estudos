@@ -1,7 +1,7 @@
 Algoritmo "Venda"
 // Escreva um algoritmo que receba o valor de um produto em reais e o
 // desconto em porcentagem a ser oferecido na venda do produto.
-// Informe o valor do desconto e o valor que o produto dever· ser vendido.
+// Informe o valor do desconto e o valor que o produto dever√° ser vendido.
 Var
 vp, venp, desct: real
 
