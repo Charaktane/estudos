@@ -1,0 +1,19 @@
+
+var
+    populacaoA, populacaoB: inteiro
+    anos: inteiro
+    taxaCrescimentoA, taxaCrescimentoB: real
+inicio
+
+    populacaoA <- 90000000
+    populacaoB <- 200000000
+    taxaCrescimentoA <- 0.03 // 3% ao ano
+    taxaCrescimentoB <- 0.015 // 1.5% ao ano
+    anos <- 0
+    enquanto populacaoA < populacaoB faca
+        populacaoA <- populacaoA + trunc(populacaoA * taxaCrescimentoA)
+        populacaoB <- populacaoB + trunc(populacaoB * taxaCrescimentoB)
+        anos <- anos + 1
+    fimenquanto
+    escreval("Número de anos para a população do país A ultrapassar ou igualar a população do país B: ", anos)
+fimalgoritmo
