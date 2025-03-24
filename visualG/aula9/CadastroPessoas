@@ -1,0 +1,17 @@
+var
+    nomes: vetor[1..5] de caractere
+    idades: vetor[1..5] de inteiro
+    i: inteiro
+inicio
+    para i <- 1 até 5 faca
+        escreval("Digite o nome da ", i, "ª pessoa: ")
+        leia(nomes[i])
+        escreval("Digite a idade de ", nomes[i], ": ")
+        leia(idades[i])
+    fimpara
+
+    escreval("Cadastros realizados: ")
+    para i <- 1 até 5 faca
+        escreval("Nome: ", nomes[i], " | Idade: ", idades[i])
+    fimpara
+fimalgoritmo
