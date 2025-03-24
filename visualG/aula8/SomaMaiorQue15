@@ -1,0 +1,17 @@
+var
+    valor1, valor2, soma: inteiro
+inicio
+    repita
+        escreval("Digite o primeiro valor: ")
+        leia(valor1)
+        escreval("Digite o segundo valor: ")
+        leia(valor2)
+        
+        soma <- valor1 + valor2
+                se soma > 15 então
+            escreval("A soma dos valores é ", soma, ". Programa encerrado.")
+        senao
+            escreval("A soma dos valores é ", soma, ". Tente novamente.")
+        fimse
+    ate soma > 15
+fimalgoritmo
