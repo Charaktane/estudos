@@ -1,0 +1,23 @@
+
+var
+    num1, num2: inteiro
+inicio
+    // Entrada de dados
+    escreva("Digite o primeiro número: ")
+    leia(num1)
+    
+    escreva("Digite o segundo número: ")
+    leia(num2)
+    
+    // Verificação dos valores distintos
+    se (num1 = num2) entao
+        escreva("Os números devem ser distintos. Reinicie o programa.")
+    senao
+        // Comparação para encontrar o maior número
+        se (num1 > num2) entao
+            escreva("O maior número é: ", num1)
+        senao
+            escreva("O maior número é: ", num2)
+        fimse
+    fimse
+fimalgoritmo
