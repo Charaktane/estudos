@@ -1,0 +1,39 @@
+var
+    A, B, resultado: real
+    C: caractere
+inicio
+
+    escreva("Digite o primeiro valor (A): ")
+    leia(A)
+    
+    escreva("Digite o segundo valor (B): ")
+    leia(B)
+    
+    escreva("Digite o operador aritmético (+, -, *, /): ")
+    leia(C)
+    se (C = '+') entao
+        resultado <- A + B
+        escreva("Resultado: ", resultado:2:2)
+    senao
+        se (C = '-') entao
+            resultado <- A - B
+            escreva("Resultado: ", resultado:2:2)
+        senao
+            se (C = '*') entao
+                resultado <- A * B
+                escreva("Resultado: ", resultado:2:2)
+            senao
+                se (C = '/') entao
+                    se (B <> 0) entao
+                        resultado <- A / B
+                        escreva("Resultado: ", resultado:2:2)
+                    senao
+                        escreva("Erro: Divisão por zero não permitida.")
+                    fimse
+                senao
+                    escreva("Erro: Operador inválido. Use +, -, * ou /.")
+                fimse
+            fimse
+        fimse
+    fimse
+fimalgoritmo
