@@ -1,0 +1,7 @@
+var
+    i: inteiro
+inicio
+    para i <- 30 até 50 passo 2 faca
+        escreval(i)
+    fimpara
+fimalgoritmo
