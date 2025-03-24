@@ -1,0 +1,24 @@
+var
+    matriz: vetor[1..4, 1..3] de real
+    linha, i, soma: inteiro
+inicio
+    soma <- 0
+
+    para i <- 1 até 4 faca
+        para j <- 1 até 3 faca
+            escreval("Digite o valor da posição [", i, ",", j, "] da matriz: ")
+            leia(matriz[i, j])
+        fimpara
+    fimpara
+    escreval("Digite o número da linha que deseja somar (1 a 4): ")
+    leia(linha)
+    se (linha >= 1) e (linha <= 4) então
+        soma <- 0
+        para i <- 1 até 3 faca
+            soma <- soma + matriz[linha, i]
+        fimpara
+        escreval("A soma dos elementos da linha ", linha, " é: ", soma)
+    senao
+        escreval("Número da linha inválido! Digite um valor entre 1 e 4.")
+    fimse
+fimalgoritmo
