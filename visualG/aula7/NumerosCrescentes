@@ -1,0 +1,8 @@
+var
+   num <- 1
+
+inicio
+  repita
+    escreval (num)
+    num <- num + 1
+ate (num > 10)
