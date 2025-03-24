@@ -1,0 +1,35 @@
+var
+    valor, maior, menor, soma, i: inteiro
+    media: real
+inicio
+    maior <- 0
+    menor <- 9999999
+    soma <- 0
+    i <- 1
+      enquanto i <= 10 faca
+        escreval("Digite o ", i, "º valor inteiro e positivo: ")
+        leia(valor)
+        
+        se valor > 0 então
+            se valor > maior então
+                maior <- valor
+            fimse
+            
+            se valor < menor então
+                menor <- valor
+            fimse
+            soma <- soma + valor
+        senao
+            escreval("Por favor, insira apenas valores positivos.")
+            continue // Pede novamente o valor sem incrementar o contador
+        fimse
+        
+        i <- i + 1
+    fimenquanto
+    
+    media <- soma / 10
+    
+    escreval("Maior valor: ", maior)
+    escreval("Menor valor: ", menor)
+    escreval("Média dos valores: ", media:0:2)
+fimalgoritmo
