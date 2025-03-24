@@ -1,0 +1,14 @@
+var
+    numeros: vetor[1..10] de inteiro
+    i: inteiro
+inicio
+    para i <- 1 até 10 faca
+        escreval("Digite o ", i, "º número: ")
+        leia(numeros[i])
+    fimpara
+
+    escreval("Números nas posições ímpares: ")
+    para i <- 1 até 10 passo 2 faca
+        escreval(numeros[i], " ")
+    fimpara
+fimalgoritmo
