@@ -1,0 +1,13 @@
+var
+    sexo: caractere
+inicio
+    repita
+        escreval("Digite o sexo (M para masculino, F para feminino): ")
+        leia(sexo)
+                se (sexo <> 'M') e (sexo <> 'F') então
+            escreval("Valor inválido! Por favor, digite apenas 'M' ou 'F'.")
+        fimse
+    ate (sexo = 'M') ou (sexo = 'F')
+    
+    escreval("Sexo digitado: ", sexo)
+fimalgoritmo
