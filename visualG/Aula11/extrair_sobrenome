@@ -1,0 +1,18 @@
+inicio
+   // Declaração de variáveis
+   cadeia nome_completo, sobrenome
+   inteiro pos_ultimo_espaco
+
+   // Entrada de dados
+   escreva("Digite o nome completo: ")
+   leia(nome_completo)
+
+   // Encontrar a posição do último espaço
+   pos_ultimo_espaco <- posicao(nome_completo, " ", tamanho(nome_completo))
+
+   // Extrair o sobrenome
+   sobrenome <- subcadeia(nome_completo, pos_ultimo_espaco + 1, tamanho(nome_completo) - pos_ultimo_espaco)
+
+   // Exibir o sobrenome
+   escreva("Sobrenome: ", sobrenome)
+fimalgoritmo
