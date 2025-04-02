@@ -1,0 +1,26 @@
+inicio
+
+   inteiro ano_nascimento, ano_atual, idade
+
+   escreva("Digite o ano de nascimento: ")
+   leia(ano_nascimento)
+   
+   escreva("Digite o ano atual: ")
+   leia(ano_atual)
+
+
+   idade <- ano_atual - ano_nascimento
+
+   escreva("A sua idade é: ", idade, " anos\n")
+   se idade >= 16 então
+      escreva("Você já tem idade para votar.\n")
+   senao
+      escreva("Você ainda não tem idade para votar.\n")
+   fimse
+
+   se idade >= 18 então
+      escreva("Você já tem idade para conseguir a Carteira de Habilitação.\n")
+   senao
+      escreva("Você ainda não tem idade para conseguir a Carteira de Habilitação.\n")
+   fimse
+fimalgoritmo
