@@ -1,0 +1,34 @@
+var
+
+li, ls, tentativas, palpite : inteiro
+resposta : caractere
+
+inicio
+li <- 0
+ls <- 0
+tentativas <- 1
+repita
+palpite <- (ls - li)\2 + li
+escreva ("Seu número é maior, menor ou igual a", palpite, "?")
+leia(resposta)
+se resposta = "igual" então
+escreval ("Acertei 😎 ")
+senao
+se resposta =  "maior" entao
+li <- palpite
+senao
+se resposta = "menor" entao
+ls <- palpite
+senao
+escreval ("Resposta incorreta")
+escreval ("escreva uma das palavras: maior, menor ou igual")
+fimse
+fimse
+tentativas <- tentativas + 1
+fimse
+ate ((tentativas > 10) OU (resposta = "igual"))
+se tentativas > 10 entao
+escreval ("infelizmente não consegui acertar ...")
+senao
+escreval ("Tentativas: ", tentativas)
+fimse
