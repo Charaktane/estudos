@@ -1,0 +1,65 @@
+inicio
+  
+   caractere tabuleiro[10][10]
+   caractere tabuleiro_visivel[10][10]
+   inteiro i, j, linha, coluna, acertos, tentativas
+   caractere resposta
+
+   // Inicializando o tabuleiro
+   para i de 0 ate 9 passo 1 faca
+      para j de 0 ate 9 passo 1 faca
+         tabuleiro[i][j] <- "."
+         tabuleiro_visivel[i][j] <- "."
+      fimpara
+   fimpara
+
+
+   tabuleiro[2][3] <- "X"  // Embarcação 1 na posição (2, 3)
+   tabuleiro[5][5] <- "X"  // Embarcação 2 na posição (5, 5)
+   tabuleiro[7][8] <- "X"  // Embarcação 3 na posição (7, 8)
+
+   acertos <- 0
+   tentativas <- 0
+
+   // Loop do jogo
+   enquanto acertos < 3 faca
+      // Exibindo o tabuleiro visível
+      escreva("Tabuleiro atual:\n")
+      para i de 0 ate 9 passo 1 faca
+         para j de 0 ate 9 passo 1 faca
+            escreva(tabuleiro_visivel[i][j], " ")
+         fimpara
+         escreva("\n")
+      fimpara
+
+      // Solicita ao jogador a linha e a coluna para o tiro
+      escreva("Digite a linha (0-9) para atirar: ")
+      leia(linha)
+      escreva("Digite a coluna (0-9) para atirar: ")
+      leia(coluna)
+
+      // Verificando se o tiro foi um acerto ou erro
+      se tabuleiro[linha][coluna] = "X" então
+         tabuleiro_visivel[linha][coluna] <- "X"
+         acertos <- acertos + 1
+         escreva("Acertou uma embarcação!\n")
+      senao
+         tabuleiro_visivel[linha][coluna] <- "O"
+         escreva("Errou! Tente novamente.\n")
+      fimse
+
+      tentativas <- tentativas + 1
+
+      // Pergunta se deseja continuar
+      escreva("Deseja continuar? (S/N): ")
+      leia(resposta)
+      se resposta = "N" ou resposta = "n" então
+         escreva("Jogo encerrado. Total de tentativas: ", tentativas, "\n")
+         pare
+      fimse
+   fimenquanto
+
+   // Exibindo o resultado final
+   escreva("Você acertou todas as embarcações em ", tentativas, " tentativas!\n")
+fimalgoritmo
+
