@@ -1,0 +1,20 @@
+inicio
+   real vetor[20]
+   inteiro i
+
+   escreva("Digite 10 números para preencher o vetor: \n")
+   para i de 1 ate 10 passo 1 faca
+      escreva("Digite o ", i, "º número: ")
+      leia(vetor[i-1])  
+   fimpara
+
+   para i de 1 ate 10 passo 1 faca
+      vetor[10+i-1] <- vetor[10-i]
+   fimpara
+
+
+   escreva("\nVetor completo: \n")
+   para i de 0 ate 19 passo 1 faca
+      escreva(vetor[i], " ")
+   fimpara
+fimalgoritmo
