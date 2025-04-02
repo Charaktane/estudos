@@ -1,0 +1,23 @@
+inicio
+ 
+   procedimento desenhar_padrao(N: inteiro)
+   inicio
+      inteiro i, j
+   
+      para i de 1 ate N passo 1 faca
+
+         para j de 1 ate N passo 1 faca
+            se i = j então
+               escreva(i, " ")
+            senao
+               escreva(". ")
+            fimse
+         fimpara
+         escreva("\n")
+      fimpara
+   fimprocedimento
+   inteiro N
+   escreva("Digite um número N: ")
+   leia(N)
+   desenhar_padrao(N)
+fimalgoritmo
