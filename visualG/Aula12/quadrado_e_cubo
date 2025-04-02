@@ -1,0 +1,11 @@
+inicio
+   real numero, quadrado, cubo
+   escreva("Digite um número: ")
+   leia(numero)
+
+   quadrado <- numero * numero
+   cubo <- numero * numero * numero
+
+   escreva("O quadrado de ", numero, " é: ", quadrado, "\n")
+   escreva("O cubo de ", numero, " é: ", cubo, "\n")
+fimalgoritmo
