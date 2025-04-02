@@ -1,0 +1,23 @@
+inicio
+   // Declaração de variáveis
+   inteiro numero, soma
+
+   soma <- 0
+
+   // Loop para ler números enquanto forem positivos
+   enquanto verdadeiro faca
+      escreva("Digite um número (número negativo para parar): ")
+      leia(numero)
+      
+      // Se o número for negativo, interrompe o laço
+      se numero < 0 então
+         pare
+      fimse
+
+      // Se o número for positivo, adiciona à soma
+      soma <- soma + numero
+   fimenquanto
+
+   // Exibe a soma dos números lidos
+   escreva("A soma dos números lidos é: ", soma)
+fimalgoritmo
