@@ -1,0 +1,37 @@
+var
+    hora_ini, hora_final, hora_total, minuto_ini, minuto_final, minuto_total: inteiro
+
+inicio
+    escreval("Informe a hora e o minuto inicial do jogo: ")
+    leia(hora_ini, minuto_ini)
+
+    escreval("Agora informe a hora e o minuto final do jogo: ")
+    leia(hora_final, minuto_final)
+
+    se hora_ini > 23 ou hora_final > 23 então
+        escreval("ERRO!! A hora deve estar entre 0 e 23.")
+    senao
+        se minuto_ini > 59 ou minuto_final > 59 então
+            escreval("ERRO!! O minuto deve estar entre 0 e 59.")
+        senao
+            se hora_ini < hora_final então
+                hora_total <- hora_final - hora_ini
+            senao
+                hora_total <- (hora_final + 24) - hora_ini
+            fimse
+
+            se minuto_ini < minuto_final então
+                minuto_total <- minuto_final - minuto_ini
+            senao
+                se minuto_ini > minuto_final então
+                    minuto_total <- (minuto_final + 60) - minuto_ini
+                    hora_total <- hora_total - 1
+                senao
+                    minuto_total <- 0
+                fimse
+            fimse
+
+            escreval("O tempo de jogo foi: ", hora_total, " horas e ", minuto_total, " minutos")
+        fimse
+    fimse
+fimalgoritmo
