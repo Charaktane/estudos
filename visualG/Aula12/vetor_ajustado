@@ -1,0 +1,23 @@
+inicio
+ 
+   real vetor[5]
+   inteiro i
+
+   escreva("Digite 5 valores reais: \n")
+   para i de 1 ate 5 passo 1 faca
+      escreva("Digite o ", i, "º valor: ")
+      leia(vetor[i-1])  
+   fimpara
+   para i de 0 ate 4 passo 1 faca
+      se i % 2 = 0 então  
+         vetor[i] <- vetor[i] * 1.02  // Aumenta 2%
+      senao 
+         vetor[i] <- vetor[i] * 1.05  // Aumenta 5%
+      fimse
+   fimpara
+
+   escreva("\nVetor resultante: \n")
+   para i de 0 ate 4 passo 1 faca
+      escreva(vetor[i], " ")
+   fimpara
+fimalgoritmo
