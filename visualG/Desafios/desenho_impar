@@ -1,0 +1,40 @@
+inicio
+
+   inteiro largura, altura, i, j
+
+   escreva("Digite a largura (número ímpar): ")
+   leia(largura)
+   escreva("Digite a altura (número ímpar): ")
+   leia(altura)
+   se largura % 2 = 0 ou altura % 2 = 0 então
+      escreva("Os valores devem ser ímpares. Tente novamente.\n")
+   senao
+
+      para i de 1 ate largura passo 1 faca
+         se i = 1 ou i = largura então
+            escreva("+") 
+         senao
+            escreva("-") 
+         fimse
+      fimpara
+      escreva("\n")
+
+      para i de 2 ate altura - 1 passo 1 faca
+         escreva("|")
+         para j de 2 ate largura - 1 passo 1 faca
+            escreva(" ") 
+         fimpara
+         escreva("|") 
+         escreva("\n")
+      fimpara
+
+      para i de 1 ate largura passo 1 faca
+         se i = 1 ou i = largura então
+            escreva("+") 
+         senao
+            escreva("-") 
+         fimse
+      fimpara
+      escreva("\n")
+   fimse
+fimalgoritmo
