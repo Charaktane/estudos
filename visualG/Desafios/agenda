@@ -1,0 +1,76 @@
+var
+   nome: vetor[1..100] de caractere
+   telefone: vetor[1..100] de caractere
+   opcao, i, j: inteiro
+   nome_busca: caractere
+   cadastro_existente: logico
+
+inicio
+   para i de 1 ate 100 passo 1 faca
+      nome[i] <- ""
+      telefone[i] <- ""
+   fimpara
+
+   enquanto verdadeiro faca
+      escreval("----- MENU -----")
+      escreval("1 - Cadastrar novo contato")
+      escreval("2 - Excluir contato")
+      escreval("3 - Consultar contato por nome")
+      escreval("4 - Sair")
+      escreval("Escolha uma opção: ")
+      leia(opcao)
+
+      se opcao = 1 então
+         escreval("Digite o nome do contato: ")
+         leia(nome[i])
+         escreval("Digite o telefone do contato: ")
+         leia(telefone[i])
+         escreval("Contato cadastrado com sucesso!")
+         i <- i + 1
+
+      senao
+         se opcao = 2 então
+            escreval("Digite o nome do contato que deseja excluir: ")
+            leia(nome_busca)
+            cadastro_existente <- falso
+
+            para j de 1 ate i - 1 passo 1 faca
+               se nome[j] = nome_busca então
+                  nome[j] <- ""
+                  telefone[j] <- ""
+                  cadastro_existente <- verdadeiro
+                  escreval("Contato excluído com sucesso!")
+               fimse
+            fimpara
+
+            se not cadastro_existente então
+               escreval("Contato não encontrado!")
+            fimse
+
+         senao
+            se opcao = 3 então
+               escreval("Digite o nome do contato que deseja consultar: ")
+               leia(nome_busca)
+               cadastro_existente <- falso
+
+               para j de 1 ate i - 1 passo 1 faca
+                  se nome[j] = nome_busca então
+                     escreval("Nome: ", nome[j])
+                     escreval("Telefone: ", telefone[j])
+                     cadastro_existente <- verdadeiro
+                  fimse
+               fimpara
+
+               se not cadastro_existente então
+                  escreval("Contato não encontrado!")
+               fimse
+
+            senao
+               se opcao = 4 então
+                  escreval("Saindo do programa...")
+                  pare
+               fimse
+            fimse
+         fimse
+      fimse
+   fimalgoritmo
