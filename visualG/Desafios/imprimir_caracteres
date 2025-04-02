@@ -1,0 +1,17 @@
+inicio
+
+   inteiro X, Y, i, j
+   escreva("Digite o número de colunas (X): ")
+   leia(X)
+   escreva("Digite o número de linhas (Y): ")
+   leia(Y)
+
+   limpaTela()
+
+   para i de 1 ate Y passo 1 faca
+      para j de 1 ate X passo 1 faca
+         escreva("*") // Imprime o caractere desejado, que pode ser alterado
+      fimpara
+      escreva("\n") // Pula para a próxima linha
+   fimpara
+fimalgoritmo
